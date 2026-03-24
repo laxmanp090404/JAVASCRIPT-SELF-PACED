@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(148, 148, 148), white, rgb(148, 148, 148));
+    padding: 20px;
+}
+
+h1 {
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: start;
+    padding-top: 2vh;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* each card  */
+.gallery img {
+    width: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal */
+/* initially hidden modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* modal is made active when we click in image by js script  */
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
