@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #fb5959, #b42424);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Anime Tiles */
+li {
+    background: #c30101;
+    margin: 12px 0px;
+    padding: 18px;
+    border-radius: 10px;
+    cursor: grab;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+li:hover {
+    background: #dc2626;
+    transform: scale(1.02);
+}
+
+/* Ranking Number */
+.rank {
+    background: #661818;
+    padding: 8px 12px;
+    border-radius: 50%;
+    min-width: 35px;
+    text-align: center;
+}
+
+/* effect while dragging */
+.dragging {
+    opacity: 0.5;
+}
+
+/* highlight drop target */
+.over {
+    border: 2px dashed white;
+}
