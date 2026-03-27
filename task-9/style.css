@@ -1,0 +1,43 @@
+body {
+    font-family: monospace, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+
+.heading {
+    text-align: center;
+    padding: 20px;
+    background: rgb(255, 246, 246);
+    text-transform: uppercase;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: xx-large;
+    z-index: 100;
+
+}
+
+#container {
+    max-width: 600px;
+    margin: 100px auto 20px auto;
+}
+
+.card {
+    background: rgb(255, 246, 246);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 25px;
+    border-bottom: 10px solid rgb(255, 192, 192);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loading {
+    text-align: center;
+    display: none;
+    margin: 20px 0 50px 0;
+    font-size: xx-large;
+    font-weight: bolder;
+}
