@@ -1,0 +1,56 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffa6a6;
+    height: calc(100vh - 78px);
+    transition: all 0.5s ease;
+}
+
+nav {
+    background: #990000;
+    font-size: x-large;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+#app {
+    background: rgb(251, 201, 201);
+    border-radius: 20px;
+    border-bottom: 16px solid #990000;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    align-items: center;
+    max-width: 600px;
+    width: 80vw;
+    height: 400px;
+    padding: 20px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#app.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
