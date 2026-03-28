@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>AniStore</h1>
+        <div class="inputfields">
+            <input type="text" id="search" placeholder="Search products...">
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="figures">Figures</option>
+                <option value="clothing">Clothing</option>
+                <option value="posters">Posters</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="products"></section>
+
+        <aside id="cart">
+            <h2>Cart</h2>
+            <div id="cartItems"></div>
+            <div id="total"></div>
+        </aside>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
